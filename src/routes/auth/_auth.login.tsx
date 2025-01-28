@@ -1,7 +1,10 @@
-import { createFileRoute, Link } from '@tanstack/react-router';
+import { createFileRoute, Link, notFound } from '@tanstack/react-router';
 import NotFound from '../../components/NotFound';
 
 export const Route = createFileRoute('/auth/_auth/login')({
+  // loader: async () => {
+  //   throw notFound({ routeId: '/' });
+  // },
   component: RouteComponent,
   // notFoundComponent: NotFound,
 });
