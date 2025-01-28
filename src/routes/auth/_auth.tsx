@@ -1,7 +1,9 @@
-import { createFileRoute, notFound, Outlet } from '@tanstack/react-router';
+import { createFileRoute, Outlet } from '@tanstack/react-router';
+import NotFound from '../../components/NotFound';
 
 export const Route = createFileRoute('/auth/_auth')({
   component: RouteComponent,
+  // notFoundComponent: NotFound,
 });
 
 function RouteComponent() {

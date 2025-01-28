@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
+import NotFound from '../../components/NotFound';
 
 export const Route = createFileRoute('/auth/_auth/login')({
   component: RouteComponent,
+  // notFoundComponent: NotFound,
 });
 
 function RouteComponent() {
